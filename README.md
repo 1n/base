@@ -2,8 +2,17 @@ base Cookbook
 =============
 TODO: Enter the cookbook description here.
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+- [ ] add users
+- [ ] authorized_keys and sshd_config
+- [ ] set time zone and ntp-server
+- [ ] cron
+- [ ] SELinux
+- [ ] google drive
+cookbook:
+- [ ] iptables
+- [ ] openvpn
+- [ ] wordpress
+- [ ] jenkins
 
 Requirements
 ------------
@@ -65,4 +74,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Vladislav Tkatchev(vlad.tkatchev@gmail.com)
