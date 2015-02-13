@@ -17,6 +17,6 @@
 # limitations under the License.
 #
 
-package "nano" do
-  action :install
-end
+include_recipe 'base::time'
+include_recipe 'base::packages'
+include_recipe 'base::users'

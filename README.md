@@ -2,17 +2,12 @@ base Cookbook
 =============
 TODO: Enter the cookbook description here.
 
-- [ ] add users
-- [ ] authorized_keys and sshd_config
+- [ ] add users, authorized_keys
+- [ ] sshd_config
 - [ ] set time zone and ntp-server
 - [ ] cron
 - [ ] SELinux
 - [ ] google drive
-cookbook:
-- [ ] iptables
-- [ ] openvpn
-- [ ] wordpress
-- [ ] jenkins
 
 Requirements
 ------------
