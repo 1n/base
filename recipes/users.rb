@@ -13,7 +13,7 @@ search(:users, '*:*').each do |u|
     gid u['group_id']
     comment u['comment']
     shell u['user_shell']
-    supports manage_home: true
+    supports :manage_home => true
   end
 
   directory "#{u['user_home']}/.ssh" do
