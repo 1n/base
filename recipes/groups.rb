@@ -10,7 +10,7 @@ search(:groups, '*:*').each do |g|
     action :create
   end
 
-  if g['sudo'] == yes
+  if g['sudo'] == 'yes'
     sudo g['id'] do
       group g['id']
     end

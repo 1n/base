@@ -26,7 +26,7 @@ search(:users, '*:*').each do |u|
     content u['ssh_keys'].join("\n")
   end
 
-  if u['sudo'] == yes
+  if u['sudo'] == 'yes'
     sudo u['id'] do
       user u['id']
     end
