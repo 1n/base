@@ -6,7 +6,9 @@
 
 search(:groups, '*:*').each do |g|
   group g['id'] do
-    gid g['group_id']
+    unless g['group_id'].nil?
+      gid g['group_id']
+    end
     action :create
   end
 

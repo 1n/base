@@ -6,8 +6,12 @@
 
 search(:users, '*:*').each do |u|
   user u['id'] do
-    uid u['user_id']
-    gid u['group_id']
+    unless u['user_id'].nil?
+      uid u['user_id']
+    end
+    unless u['group_id']
+      gid u['group_id']
+    end
     comment u['comment']
     unless u['user_home'].nil?
       home u['user_home']
