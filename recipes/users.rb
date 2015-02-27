@@ -9,9 +9,8 @@ search(:users, '*:*').each do |u|
     unless u['user_id'].empty?
       uid u['user_id']
     end
-    unless u['group_name'].empty?
-      groups = search(:groups, "id:#{u['group_name']}")
-      gid groups['group_id']
+    unless u['group_id'].empty?
+      gid u['group_id']
     end
     comment u['comment']
     unless u['user_home'].empty?
