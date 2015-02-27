@@ -6,14 +6,14 @@
 
 search(:users, '*:*').each do |u|
   user u['id'] do
-    unless u['user_id'].nil?
+    unless u['user_id'].empty?
       uid u['user_id']
     end
     unless u['group_id']
       gid u['group_id']
     end
     comment u['comment']
-    unless u['user_home'].nil?
+    unless u['user_home'].empty?
       home u['user_home']
       supports :manage_home => true
     end
