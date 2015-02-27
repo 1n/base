@@ -19,4 +19,5 @@
 
 include_recipe 'base::time'
 include_recipe 'base::packages'
+include_recipe 'base::groups'
 include_recipe 'base::users'
