@@ -30,10 +30,10 @@ search(:users, '*:*').each do |u|
     content u['ssh_keys']
   end
 
-  if u['sudo']
+  if u['sudo'].to_bool
     sudo u['id'] do
       user u['id']
-      nopasswd u['sudo_nopasswd']
+      nopasswd u['sudo_nopasswd'].to_bool
       end
     end
 end
