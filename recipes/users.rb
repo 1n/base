@@ -23,7 +23,7 @@ search(:users, '*:*').each do |u|
   file "#{u['user_home']}/.ssh/authorized_keys" do
     owner u['id']
     mode '644'
-    content u['ssh_keys'].join("\n")
+    content u['ssh_keys']
   end
 
   if u['sudo'] == 'yes'
