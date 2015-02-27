@@ -36,5 +36,4 @@ search(:users, '*:*').each do |u|
       nopasswd u['sudo_nopasswd']
       end
     end
-  end
 end
